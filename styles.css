@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    
+}
+header{
+    background-color: rgb(26, 24, 24);
+    opacity: 0.8;
+    
+}
+.navdiv{
+    display: none;
+}
+.image1{
+    width: 6%;
+    height: 12%;
+    z-index: 900;
+  
+   opacity: 0.9;
+    position: fixed;
+    top: 0;
+     left: 18%;
+}
+nav{
+    width: 40%;
+    margin: auto;
+    
+}
+.navlink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navlink button{
+    color: white;
+    padding: 7px 60px 18px 60px;
+    margin: 0;
+    background-color: rgb(34, 32, 32);
+    border: none;
+    outline: none;
+    font-size: x-large;
+    font-family: 'Questrial', sans-serif;
+    
+}
+.navlink button:hover{
+    border-left: 1px solid rgb(110, 100, 100);
+    border-right: 1px solid rgb(110, 100, 100);
+    background-color: black;
+    
+}
+.dropdown, .dropdown button{
+    background-color: inherit;
+    display: block;
+   
+}
+.dropdown:hover{
+    display: block;
+}
+.navlink button::after{
+    content: ' \02EC';
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.904);
+    
+    padding-top: 2%;
+    
+}
+.dropdown-content a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    
+}
+.dropdown-content a:hover{
+    color: yellow;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-style {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 18%;
+}
+main img{
+    width: 100%;
+}
+
+.gridimg{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33.33333333333333%, 1fr));
+    grid-auto-rows: 45%;
+}
+.sectiondiv{
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    background-color: rgb(192, 190, 190);
+    margin-bottom: 100px;
+}
+input[type=email]{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 7px;
+    border-radius: 7px;
+}
+input[type=text]{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 7px;
+    border-radius: 7px;
+}
+textarea{
+    padding: 7px;
+    width: 100%;
+    border-radius: 7px;
+}
+button[type=submit]{
+        margin-top: 10px;
+        width: 20%;
+        background-color: red;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        color: white;
+}
+footer{
+    background-color: blue;
+    text-align: center;
+    padding: 100px;
+}
+footer img{
+    width: 10%;
+}
+@media only screen and (max-width: 800px) {
+    .navlink{
+        display: none;
+    }
+    .navdiv{
+        display: block;
+        text-align: center;
+        
+    }
+   header div img{
+       display: none;
+   }
+   .navdiv a {
+       color: red;
+       padding-right: 10px;
+       text-decoration: none;
+
+   }
+   .sectiondiv{
+       width: 100%;
+   }
+  }

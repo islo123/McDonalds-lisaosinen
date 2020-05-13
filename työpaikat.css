@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    
+}
+header{
+    background-color: rgb(26, 24, 24);
+    opacity: 0.8;
+    
+}
+.navdiv{
+    display: none;
+}
+.image1{
+    width: 6%;
+    height: 12%;
+    z-index: 900 ;
+  
+   opacity: 0.6;
+    position: fixed;
+    top: 0;
+     left: 18%;
+}
+nav{
+    width: 40%;
+    margin: auto;
+    
+}
+.navlink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navlink button{
+    color: white;
+    padding: 7px 60px 18px 60px;
+    margin: 0;
+    background-color: rgb(34, 32, 32);
+    border: none;
+    outline: none;
+    font-size: x-large;
+    font-family: 'Questrial', sans-serif;
+    
+}
+.navlink button:hover{
+    border-left: 1px solid rgb(110, 100, 100);
+    border-right: 1px solid rgb(110, 100, 100);
+    background-color: black;
+    
+}
+.dropdown, .dropdown button{
+    background-color: inherit;
+    display: block;
+   
+}
+.dropdown:hover{
+    display: block;
+}
+.navlink button::after{
+    content: ' \02EC';
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.904);
+    
+    padding-top: 2%;
+    
+}
+.dropdown-content a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    
+}
+.dropdown-content a:hover{
+    color: yellow;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-style {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 18%;
+}
+.viihdy{
+    background-color: green !important;
+}
+.main-img{
+   
+    background-image: url("mc-donalds.jpg");
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: 0;
+    padding: 30% 0 0 0;
+    z-index: -1;
+}
+.main-img::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.473);
+    z-index: -1 !important;
+}
+.main-img h1{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+main button{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: green;
+    color: white;
+
+}
+.buttonp{
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+    background-color: rgb(201, 195, 195);
+}
